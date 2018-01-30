@@ -1,27 +1,23 @@
 package application;
 
 public class GameController {
-	int stack1 = 3;
-	int stack2 = 5;
-	int stack3 = 7;
+	int heap1 = 3;
+	int heap2 = 5;
+	int heap3 = 7;
 
-	public GameController() {
-		// TODO Auto-generated constructor stub
+	/**
+	 * @return the heap1
+	 */
+	public int getHeap1() {
+		return heap1;
 	}
 
 	/**
-	 * @return the stack1
+	 * @param heap1
+	 *            the heap1 to set
 	 */
-	public int getStack1() {
-		return stack1;
-	}
-
-	/**
-	 * @param stack1
-	 *            the stack1 to set
-	 */
-	public void setStack1(int stack1) {
-		this.stack1 = stack1;
+	public void setHeap1(int heap1) {
+		this.heap1 = heap1;
 	}
 
 	/**
@@ -30,23 +26,23 @@ public class GameController {
 	 * @param amount
 	 *            - amount to decrement
 	 */
-	public void decrementStack1(int amount) {
-		stack1 -= amount;
+	public void decrementHeap1(int amount) {
+		heap1 -= amount;
 	}
 
 	/**
-	 * @return the stack2
+	 * @return the heap2
 	 */
-	public int getStack2() {
-		return stack2;
+	public int getHeap2() {
+		return heap2;
 	}
 
 	/**
-	 * @param stack2
-	 *            the stack2 to set
+	 * @param heap2
+	 *            the heap2 to set
 	 */
-	public void setStack2(int stack2) {
-		this.stack2 = stack2;
+	public void setHeap2(int heap2) {
+		this.heap2 = heap2;
 	}
 
 	/**
@@ -55,22 +51,23 @@ public class GameController {
 	 * @param amount
 	 *            - amount to decrement
 	 */
-	public void decrementStack2(int amount) {
-		stack2 -= amount;
-	}
-	/**
-	 * @return the stack3
-	 */
-	public int getStack3() {
-		return stack3;
+	public void decrementHeap2(int amount) {
+		heap2 -= amount;
 	}
 
 	/**
-	 * @param stack3
-	 *            the stack3 to set
+	 * @return the heap3
 	 */
-	public void setStack3(int stack3) {
-		this.stack3 = stack3;
+	public int getHeap3() {
+		return heap3;
+	}
+
+	/**
+	 * @param heap3
+	 *            the heap3 to set
+	 */
+	public void setHeap3(int heap3) {
+		this.heap3 = heap3;
 	}
 
 	/**
@@ -79,7 +76,7 @@ public class GameController {
 	 * @param amount
 	 *            - amount to decrement
 	 */
-	public void decrementStack3(int amount) {
-		stack3 -= amount;
+	public void decrementHeap3(int amount) {
+		heap3 -= amount;
 	}
 }
