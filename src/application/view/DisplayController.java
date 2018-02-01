@@ -2,6 +2,7 @@ package application.view;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 
 public class DisplayController {
 	@FXML
@@ -10,6 +11,12 @@ public class DisplayController {
 	Label secondHeapLbl;
 	@FXML
 	Label thirdHeapLbl;
+	@FXML
+	TextField firstHeapInput;
+	@FXML
+	TextField secondHeapInput;
+	@FXML
+	TextField thirdHeapInput;
 
 	public void updateFirstHeapLabel() {
 
