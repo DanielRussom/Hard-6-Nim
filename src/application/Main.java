@@ -2,6 +2,7 @@ package application;
 
 import java.io.IOException;
 
+import application.view.DisplayController;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -30,11 +31,13 @@ public class Main extends Application {
 			FXMLLoader loader = new FXMLLoader();
 			loader.setLocation(Main.class.getResource("view/Display.fxml"));
 			rootLayout = (AnchorPane) loader.load();
-
+			DisplayController displayController = (DisplayController) loader.getController();
+			displayController.init();
 			// Show the scene containing the root layout.
 			Scene scene = new Scene(rootLayout);
 			primaryStage.setScene(scene);
 			primaryStage.show();
+			
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

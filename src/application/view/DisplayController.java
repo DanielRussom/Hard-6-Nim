@@ -41,11 +41,25 @@ public class DisplayController {
 	public void removeFromHeap3() {
 
 	}
-	
+
 	public void init() {
 		firstHeapInput.textProperty().addListener((observable, oldValue, newValue) -> {
-		    secondHeapInput.setText("0");
-		    thirdHeapInput.setText("0");
+			if (!firstHeapInput.getText().equals("0")) {
+				secondHeapInput.setText("0");
+				thirdHeapInput.setText("0");
+			}
+		});
+		secondHeapInput.textProperty().addListener((observable, oldValue, newValue) -> {
+			if (!secondHeapInput.getText().equals("0")) {
+				firstHeapInput.setText("0");
+				thirdHeapInput.setText("0");
+			}
+		});
+		thirdHeapInput.textProperty().addListener((observable, oldValue, newValue) -> {
+			if (!thirdHeapInput.getText().equals("0")) {
+				firstHeapInput.setText("0");
+				secondHeapInput.setText("0");
+			}
 		});
 	}
 }
